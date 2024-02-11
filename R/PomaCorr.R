@@ -193,7 +193,7 @@ PomaCorr <- function(data,
         ggplot2::guides(edge_alpha = "none", edge_width = "none") +
         ggraph::scale_edge_colour_gradientn(limits = c(-1, 1), colors = c("firebrick2", "dodgerblue2")) +
         ggraph::geom_node_point(color = "white", size = 2) +
-        ggraph::geom_node_text(ggplot2::aes(label = name), repel = FALSE) +
+        # ggraph::geom_node_text(ggplot2::aes(label = name), repel = FALSE) +
         ggraph::theme_graph()
       
       return(list(correlations = correlations, 
